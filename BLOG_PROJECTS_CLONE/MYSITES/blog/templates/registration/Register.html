@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h2>Please Register First</h2>
+    <form class="register" method="POST" action="{% url 'login' %}">
+        {{user_form.as_p}}
+        {{register_form.as_p}}
+    </form>
+
+
+</div>
+{% endblock content %}
+
